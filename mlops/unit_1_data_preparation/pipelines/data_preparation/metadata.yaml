@@ -94,10 +94,10 @@ widgets:
   configuration:
     chart_type: time series bar chart
     group_by:
-    - lpep_pickup_datetime
+    - lpep_pickup_datetime_cleaned
     metrics:
     - aggregation: count
-      column: lpep_pickup_datetime
+      column: lpep_pickup_datetime_cleaned
     time_interval: original
   downstream_blocks: []
   executor_config: null
@@ -130,8 +130,7 @@ widgets:
   status: failed
   timeout: null
   type: chart
-  upstream_blocks:
-  - ingest
+  upstream_blocks: []
   uuid: missing_values_for_ingest
 - all_upstream_blocks_executed: true
   color: null
