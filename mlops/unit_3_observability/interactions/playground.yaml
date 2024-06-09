@@ -1,28 +1,4 @@
 inputs:
-  checkbox:
-    options:
-    - label: '239'
-      value: '239'
-    - label: '170'
-      value: '170'
-    - label: '1'
-      value: '1'
-    - label: '1000'
-      value: '1000'
-    style: null
-    type: checkbox
-  options:
-    options:
-    - label: '236'
-      value: '236'
-    - label: '65'
-      value: '65'
-    - label: '2'
-      value: '2'
-    - label: '2000'
-      value: '2000'
-    style: null
-    type: dropdown_menu
   text:
     options: []
     style:
@@ -47,7 +23,7 @@ variables:
     uuid: null
   PULocationID:
     description: 'Sample values: 236, 65'
-    input: options
+    input: text
     name: PULocationID
     required: true
     types:

@@ -1,0 +1,29 @@
+Script started on 2024-06-09 11:04:03+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="134" LINES="19"]
+[0;32m@thanhnhatt29 [0m➜ [1;34m/workspaces/mlops-mage-zoomcamp [0;36m([1;31mmaster[0;36m) [0m$ curl --location 'http://localhost:6789/api/runs' \
+> --header 'Authorization: Bearer ef46ef6d89f44853b3d31ef771991bc5' \
+> --header 'Content-Type: application/json' \
+> --header 'Cookie: lng=en' \
+> --data '{
+>     "run": {
+>         "pipeline_uuid": "predict",
+>         "block_uuid": "inference",
+>         "variables": {
+>             "inputs": [
+>                 {
+>                     "DOLocationID": "239",
+>                     "PULocationID": "236",
+>                     "trip_distance": 1.98
+>                 },
+>                 {
+>                     "DOLocationID": "170",
+>                     "PULocationID": "65",
+>                     "trip_distance": 6.54
+>                 }
+>             ]
+>         }
+>     }
+> }'
+{"run": {"output": [12.3821382522583, 24.759305953979492]}}[0;32m@thanhnhatt29 [0m➜ [1;34m/workspaces/mlops-mage-zoomcamp [0;36m([1;31mmaster[0;36m) [0m$ exit
+exit
+
+Script done on 2024-06-09 11:04:12+00:00 [COMMAND_EXIT_CODE="0"]
